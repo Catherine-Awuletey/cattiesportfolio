@@ -125,15 +125,14 @@ const article = () => {
               summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
            Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
-              link="/"
+              link="https://medium.com/@techvoot.solutions/how-to-implement-pagination-in-your-react-js-e6b53043c84e"
               img={article1}
             />
             <FeaturedArticle
-              title=" Build A Custom Pagination Component In Reactjs From Scratch"
-              summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
-           Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+              title="Build Simple Loading Screens From Scratch In React Without NPM Packages"
+              summary="Learn how to build simple loading screens in react without installing npm packages in your ReactJS project. Use this step-by-step guide to create a loading screen."
               time="9 min read"
-              link="/"
+              link="https://dev.to/beginarjun/how-to-create-a-simple-loading-screen-in-react-1md6"
               img={article2}
             />
           </ul>
@@ -142,40 +141,27 @@ const article = () => {
           </h2>
           <ul>
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="December 16, 2024"
-              link="/"
+              title="Dynamic Title: Build A Reusable Custom Hook For Inputs And Error Handling"
+              date="August 31, 2020"
+              link="https://dev.to/luispa/how-to-add-a-dynamic-title-on-your-react-app-1l7k"
               img={article3}
             />
 
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="December 16, 2024"
-              link="/"
+              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs "
+              date="October 13, 2023"
+              link="https://codewithpawan.medium.com/form-validation-in-react-a-comprehensive-guide-with-examples-c12e1c8671f2"
               img={article4}
             />
 
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="December 16, 2024"
-              link="/"
+              title="Smooth Scrolling In Reactjs: A Smooth Scrolling Effect with Lenis"
+              date="December 2, 2024"
+              link="https://medium.com/@mahesh.paul.j/smooth-scrolling-in-react-js-a-step-by-step-guide-for-lenis-smooth-scroll-9aa9d1c24c78"
               img={article5}
             />
 
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="December 16, 2024"
-              link="/"
-              img={article3}
-            />
-
-            <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-              date="December 16, 2024"
-              link="/"
-              img={article3}
-            />
-
+           
           </ul>
         </Layout>
       </main>

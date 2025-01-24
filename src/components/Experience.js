@@ -4,17 +4,19 @@ import { motion, useScroll } from "framer-motion";
 import LiIcons from "./LiIcons";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
-
-    const ref = useRef(null);
+  const ref = useRef(null);
 
   return (
-    <li ref={ref} className="my-8 first:mt-0 lats:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
-     <LiIcons reference={ref}/>
-     
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 lats:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+    >
+      <LiIcons reference={ref} />
+
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, typye:"spring"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, typye: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
@@ -49,41 +51,43 @@ const Experience = () => {
 
       <div ref={ref} className="w-[75] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
-        style={{scaleY: scrollYProgress}}
-        className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]" />
+          style={{ scaleY: scrollYProgress }}
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+        />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address=" Mountain View, CA"
-            work=" Worked on a team responsible for developing new features for Google's 
-        search engine, including improving the accuracy and relevance of search results and 
-        developing new tools for data analysis and visualization.      "
+            position="Frontend Developer"
+            company="Embrace Technologies"
+            companyLink="https://embracetechnologies.org/"
+            time="2022-2023"
+            address="Accra, Ghana"
+            work="Collaborated with a team to design and implement new front-end features,
+             enhancing user experience and interface performance. Focused on improving the functionality and 
+             responsiveness of web applications, and developed tools for data presentation and visualization."
           />
 
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address=" Mountain View, CA"
-            work=" Worked on a team responsible for developing new features for Google's 
-        search engine, including improving the accuracy and relevance of search results and 
-        developing new tools for data analysis and visualization.      "
-          />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address=" Mountain View, CA"
-            work=" Worked on a team responsible for developing new features for Google's 
-        search engine, including improving the accuracy and relevance of search results and 
-        developing new tools for data analysis and visualization.      "
+            position="Marketing Engineer"
+            company="Life Care Technology"
+            companyLink="https://www.lifecaretechnology.com/ghana/"
+            time="2024-Present"
+            address="Accra, Ghana"
+            work="Provided technical support and product demonstrations to boost sales, 
+            trained users to enhance equipment productivity, and managed CRM systems to streamline customer feedback for service improvements."
+          />
+          
+          
+
+          <Details
+            position="Frontend Developer"
+            company="Embrace Technologies"
+            companyLink="https://embracetechnologies.org/"
+            time="2025-Present"
+            address="Accra, Ghana"
+            work="Collaborated with a team to develop and enhance new features for web applications, 
+            focusing on improving user experience, optimizing performance, and building intuitive interfaces. "
           />
         </ul>
       </div>

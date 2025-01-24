@@ -47,18 +47,17 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence." 
+            type="General Science"
+            time="2017-2019"
+            place="Akosombo International School"
+            info=" Relevant courses included Physics, Elective Mathematics, Biology and Chemistry." 
           />
  <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info=" Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence." 
+            type="Bachelor Of Science In Computer Engineering"
+            time="2019-2023"
+            place="Kwame Nkrumah University of Science and Technology"
+            info=" Relevant courses included Object-Oriented	Programming	and	Data	Structures,	Introduction	to	Design	and	
+            Programming	for	Web	(HTML	&	CSS) and 	Distributed	Computing" 
           />
 
 

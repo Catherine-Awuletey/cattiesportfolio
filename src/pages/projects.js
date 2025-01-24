@@ -6,6 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project2 from "../../public/images/projects/agency-website-cover-image.jpg";
+import project3 from "../../public/images/projects/an-agency-website-cover-image.jpg";
+import project4 from "../../public/images/projects/students-react.jpg";
+import project5 from "../../public/images/projects/projects-list.jpg";
+import project6 from "../../public/images/projects/previous-portfolio.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -13,8 +18,10 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
-    lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article
+      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
+    lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
       <div className="absolute top-0 -right-3 -z-10 w-[101%]  h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
 
       <Link
@@ -29,21 +36,27 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
         </Link>
 
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
 
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
@@ -67,10 +80,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6
-     relative dark:bg-dark dark:border-light xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%]  h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]
-      " />
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6
+     relative dark:bg-dark dark:border-light xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%]  h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]
+      "
+      />
       <Link
         href={link}
         target="_blank"
@@ -86,13 +103,17 @@ const Project = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between">
@@ -121,7 +142,7 @@ const projects = () => {
         <title>Tech Cattie | Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
-      
+
       <TransitionEffect />
 
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
@@ -136,75 +157,78 @@ const projects = () => {
               <FeaturedProject
                 title=" Crypto Screener Application"
                 img={project1}
-                summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
            local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
+                link="https://crypto-bucks.netlify.app/"
+                github="https://github.com/Catherine-Awuletey/crypto"
+                type="Currently Working On"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
+                title="Homyz Real Estate Web Application"
+                img={project2}
                 summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
-                link="/"
-                github="/"
+                link="https://webhomyz.netlify.app/"
+                github="https://github.com/Catherine-Awuletey/Homyz"
                 type="Featured Project"
               />
             </div>
+            
+            
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                github="/"
+                title="Dream House Web Application"
+                img={project3}
+                summary="This is web page for a real estate organization. Potential clients can find houses within their budgets and preferred neighborhoods."
+                link="https://my-dream-house.netlify.app
+
+                "
+                github="https://github.com/Catherine-Awuletey/Dream-House"
                 type="Featured Project"
               />
             </div>
+           
+           
             <div className="col-span-12">
               <FeaturedProject
-                title=" Crypto Screener Application"
-                img={project1}
-                summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-           It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-           local currency."
-                link="/"
-                github="/"
+                title="Student Course Web Application"
+                img={project4}
+                summary="This was an initial projected created with HTML aand CSS only. This is an educational web page showcasing courses availabe and course packages in react. It is a UI design originally from the figma community."
+                link="https://students-web.netlify.app/"
+                github="https://github.com/Catherine-Awuletey/Student-react"
                 type="Featured Project"
               />
             </div>
+           
+           
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                github="/"
+                title="Completed Projects List Application"
+                img={project5}
+                summary=" This is a list of projects completed so far, with links to host them. It was created with HTML, CSS and JavaScript."
+                link="https://myprojectslist.netlify.app/"
+                github="https://github.com/Catherine-Awuletey/Projects-list"
                 type="Featured Project"
               />
             </div>
+            
+            
+            
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                github="/"
+                title="Previous Portfolio Web Application"
+                img={project6}
+                summary="My previously created portfolio. This was created with HTML, CSS and JavaScript. It is a responsive web page."
+                link="https://cattiesportfolio.netlify.app/"
+                github="https://github.com/Catherine-Awuletey/myportfolio"
                 type="Featured Project"
               />
             </div>
